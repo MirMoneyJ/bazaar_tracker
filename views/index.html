@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Craftable Items</title>
+</head>
+<body>
+  <h1>Craftable Item Details</h1>  
+    <label for="item-name-input">Enter Item Name:</label>
+    <input type="text" id="item-name-input" onkeyup="sendData(this)" placeholder="e.g. Wooden Sword">
+    <section id = "searchResults">
+    <button type="submit">Get Details</button>
+
+    </section>
+
+    <script> 
+      function sendData(e) {
+        fetch('getItem', {
+          method: 'POSE',
+          headers: {'Content-Type' : 'application/json'},
+          body: JSON.stringify({payload: e.value})
+        });
+      }
+    </script>
+</body>
+</html>
