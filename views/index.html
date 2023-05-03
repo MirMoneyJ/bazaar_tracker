@@ -8,11 +8,16 @@
   <h1>Craftable Item Details</h1>  
   <div style = "text-align: center;"> 
     <label for="item-name-input">Enter Item Name:</label><br><br>
-
   </div>
     <input type="text" id="item-name-input" onkeyup="sendData(this)" placeholder="e.g. Wooden Sword">
     <section id = "searchResults"> <!creates a new section with an ID of "searchResults" which will be used to display the search results -->
       <script> 
+        /*
+        file name: index.html
+        purpose: Create the layout HTML and activates the 'live search'
+        authors: Lawrence, Ahmir, Krishna, Chic, Trent, Mya
+        version: 5/2/23
+        */
         //This defines a new function called "sendData" that takes a single argument
         // "e", which is the input field that triggers the event.
           function sendData(e) {
