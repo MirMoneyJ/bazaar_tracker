@@ -6,42 +6,57 @@
 </head>
 <body>
   <h1>Craftable Item Details</h1>  
-    <label for="item-name-input">Enter Item Name:</label>
-    <input type="text" id="item-name-input" onkeyup="sendData(this)" placeholder="e.g. Wooden Sword">
-    <section id = "searchResults">
+  <div style = "text-align: center;"> 
+    <label for="item-name-input">Enter Item Name:</label><br><br>
 
-    <script> 
-      function sendData(e) {
-        const searchResults = document.getElementById('searchResults');
-        let match = e.value.match(/^[a-zA-Z ]*/);
-        let match2 = e.value.match(/\s*/);
-        if(match2[0] === e.value) {
-          searchResults.innerHTML = '';
-          return;
-        }
-        if(match[0] === e.value) {
-          fetch('getItem', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({payload: e.value})
-        }).then(res => res.json()).then(data => {
-          let payload = data.payload;
-          console.log(payload);
-          searchResults.innerHTML = '';
-          if(payload.length < 1) {
-            searchResults.innerHTML = `<p>Sorry. Nothing Found.</p>`;
+  </div>
+    <input type="text" id="item-name-input" onkeyup="sendData(this)" placeholder="e.g. Wooden Sword">
+    <section id = "searchResults"> <!creates a new section with an ID of "searchResults" which will be used to display the search results -->
+      <script> 
+        //This defines a new function called "sendData" that takes a single argument
+        // "e", which is the input field that triggers the event.
+          function sendData(e) {
+            const searchResults = document.getElementById('searchResults'); //retrieves the HTML element with an ID of "searchResults" and stores it in a constant variable called "searchResults".
+            let match = e.value.match(/^[a-zA-Z ]*/); //searches for letters or spaces
+            let match2 = e.value.match(/\s*/); 
+            //checks if the first match result found only whitespace characters and nothing else
+            if(match2[0] === e.value) {
+              searchResults.innerHTML = '';
+              return;
+            }
+            //checks if the first match result found any letters or spaces
+            if(match[0] === e.value) {
+              //fetch request to a server endpoint called "getItem",
+              //using the POST method and sending a JSON payload containing the search term entered by the user.
+              fetch('getItem', {
+              method: 'POST',
+              headers: {'Content-Type': 'application/json'},
+              body: JSON.stringify({payload: e.value})
+            }).then(res => res.json()).then(data => {
+              let payload = data.payload;
+              console.log(payload);
+              //clears the search results section and checks if the response payload contains any results.
+              //if not, display error message.
+              searchResults.innerHTML = '';
+              if(payload.length < 1) {
+                searchResults.innerHTML = `<p>Sorry. Nothing Found.</p>`;
+                return;
+              }
+              //loops through each item in the payload and adds its name to the search results 
+              //if there is more than one result, a horizontal line is added between each result
+              payload.forEach((item, index) => {
+                if(index > 0) searchResults.innerHTML += '<hr>';
+                searchResults.innerHTML += `<p>${item.name}</p>`;
+                searchResults.innerHTML += `<p>Description:${item.description}</p>`;
+                searchResults.innerHTML += `<p>Contents:${item.contents}</p>`;
+                searchResults.innerHTML += `<p>Requirements:${item.requirements}</p>`;
+              });
+            });
             return;
+            }
+            searchResults.innerHTML = '';
           }
-          payload.forEach((item, index) => {
-            if(index > 0) searchResults.innerHTML += '<hr>';
-            searchResults.innerHTML += `<p>${item.name}</p>`;
-          });
-        });
-        return;
-        }
-        searchResults.innerHTML = '';
-      }
-    </script>
+        </script>
     </section>
 </body>
 </html>
