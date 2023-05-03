@@ -1,6 +1,6 @@
 {
   "name": "bazaar_tracker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A node.js module for interacting with a MongoDB database",
   "main": "index.js",
   "scripts": {
