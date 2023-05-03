@@ -1,1 +1,707 @@
 
+
+db.craftableItems.insertMany([   
+    { 
+     name: "Alluring Finery",     
+    description: "Raiment and tiara of seductive beauty, lightly scented, as if with some sweet flower.",      
+     contents: "Lamia’s Tiara,Enchanter’s Habit",
+     requirements: "Fine Wool (x3), Tyrant Hide, Ice Magicite (x4)"
+  },
+  {
+     name: "Antidote Set",
+     description: "Take one of these and laugh in the face of poison! Contains three (3) antidotes.",
+     contents: "Antidote (x3)",
+     requirements: "Drab Wool (x2)"
+  },
+  {
+     name: "Armor-piercing Shot",
+     description: "Contains one (1) Spica war gun, and one (1) pouch of shot, sometimes known as “wind shot”, that gathers air behind it in a cone as it flies for an impact that can pierce rock.",
+     contents: "Windslicer Shot Spica",
+     requirements: "Ichthon Scale (x4), Silver Liquid (x5), Wind Crystal (x7)"
+  },
+  {
+  name: "Arrows Alight",
+  description: "Contains one (1) quiver of arrows, each with an oil-soaked cloth wrapped about its point, and one (1) longbow.",
+  contents: "Fiery Arrows, Longbow",
+  requirements: "Crooked Fang (x2), Fire Stone (x4)"
+  },
+  {
+    name: "Arrows of the Moon Goddess",
+    description: "Filled with the grace of the moon goddess, the shaft emits a numinous glow.",
+    contents: "Artemis Arrows",
+    requirements: "Great Serpent’s Fang (x2), Dorsal Fin (x2), Gemini Gem (x3)"
+   },
+   {
+    name: "Assorted Leathers",
+    description: "Matching pair of leather goods, guaranteeing comfort both in the bazaar and on the battlefield.",
+    contents: "Leather Breastplate, Leather Headgear",
+    requirements: "Wolf Pelt (x2), Tanned Hide, Dark Stone (x2)"
+  },
+  {
+    name: "Attenuated Greatsword",
+    description: "Long and narrow, this greatsword is adorned with a crest marking its bearer as a knight.",
+    contents: "Save the Queen",
+    requirements: "Quality Stone (x4), Sky Jewel (x7), Holy Crystal (x10)"
+  },
+  {
+    name: "Back Harness",
+    description: "When fighting on the floors of coliseums, gladiators were made to wear harnesses such as this to prevent their escape.",
+    contents: "Battle Harness",
+    requirements: "Throat Wolf Blood"
+  },
+  {
+    name: "Befuddling Incendiaries",
+    description: "Contains one (1) incendiary device and one (1) pouch of bombs. Rumored to be used by the Archadian elite guard to sew chaos among enemy ranks; a tactic of brutal efficiency.",
+    contents: "Caldera, Chaos Bombs",
+    requirements: "Bomb Shell (x4), Book of Orgain-Cent (x3), Fire Crystal (x7)"
+  },
+  {
+    name: "Black Vestments",
+    description: "Protectives preferred by practitioners of the black magick arts.",
+    contents: "Black Mask, Black Robes",
+    requirements: "Blood Wool (x9), Prime Tanned Hide (x7), Dark Crystal (x8)"
+  },
+  {
+    name: "Blindflight Quarrels",
+    description: "These bolts are actually tightly rolled scrolls, a spell of dark magicks inscribed on the vellum. Quite valuable. With included crossbow, it makes for a great bargain.",
+    contents: "Black Bolts, Hunting Crossbow",
+    requirements: "Spiral Incisor (x3), Silver Liquid (x3), Dark Crystal (x3)"
+  },
+  {
+    name: "Blush of Light",
+    description: "This small ornament glows softly when worn, emitting a feeble light.",
+    contents: "Firefly",
+    requirements: "Magick Lamp, Tomato Stalk (x2), Snowfly"
+  },
+  {
+    name: "Bow & Bodkin",
+    description: "Contains one (1) Shortbow, easily drawn, and one (1) quiver of finely honed arrows.",
+    contents: "Parallel Arrows, Shortbow",
+    requirements: "Bat Fang, Rat Pelt (x2), Dark Stone (x2)"
+  },
+  {
+    name: "Bow of the Moon Goddess",
+    description: "Filled with the grace of the moon goddess, the body emits a numinous glow.",
+    contents: "Artemis Bow",
+    requirements: "Solid Horn (x5), Moondust (x2), Sylphi Halcyon"
+  },
+  {
+    name: "Brawler’s Fetish",
+    description: "Decorative trinket conceived long ago by a pugilist seeking a means to harness his inner strength.",
+    contents: "Amber Armlet",
+    requirements: "Gimble Stalk (x2)"
+  },
+  {
+    name: "Brilliant Shield",
+    description: "A triumph of function and form. Various metals make up the elaborate decoration adoring its face.",
+    contents: "Venetian Shield",
+    requirements: "Ancient Turtle Shell (x2),Ring Wyrm Liver (x2),Undin Halcyon"
+  },
+  {
+    name: "Burning Blade",
+    description: "Fierce flames dance the length of this blade, searing the flesh of its mark even as it cuts. A mighty weapon.",
+    contents: "Flametongue",
+    requirements: "Lumber (x2),Malboro Vine (x2),Fire Stone (x6)"
+  },
+  {
+    name: "Burning Fangs",
+    description: "Fangs of a great beast, ever burning. Within each is said to dwell a fire elemental.",
+    contents: "Soleil Fang (x5)",
+    requirements: "Pointed Horn"
+  },
+  {
+    name: "Burnished Protectives",
+    description: "Heavy pieces of armor polished to a mirror finish and suffused with strong magicks, affording additional protection beyond the physical.",
+    contents: "Burgonet,Shielded Armor,Ice Shield",
+    requirements: "Wyrm Carapace (x2),Quality Hide (x2),Earth Magicite (x4)"
+  },
+  {
+    name: "Chain-link Belt",
+    description: "Ornamental belt made by the stringing of chain links one to another. A badge of great strength among those who test their mettle on the field of battle.",
+    contents: "Bubble Belt",
+    requirements: "Battlewyrm Carapace (x2),Adamantite"
+  },
+  {
+    name: "Chronos Tear Pack",
+    description: "Time waits for no man, why should you wait for time? Contains ten (10) Chronos Tears.",
+    contents: "Chronos Tear (x10)",
+    requirements: "Eye of the Hawk"
+  },
+  {
+    name: "Comfy Headgear",
+    description: "You might be inclined to pussyfoot about in this magicked hood. Would saying it granted great speed be letting its secret out of the bag? Well? Curious?.",
+    contents: "Cat-ear Hood",
+    requirements: "White Incense (x2),Einherjarium (x2),Virgo Gem (x7)"
+  },
+  {
+    name: "Crimson Blade",
+    description: "The blade of this sword is said to drink the blood of foes, growing ever deeper in gue as it slakes its thirst. A dread blade.",
+    contents: "Blood Sword",
+    requirements: "Solid Stone (x2),Vampyr Fang (x3),Dark Crystal (x15)"
+  },
+  {
+    name: "Cursed Necklace",
+    description: "Heirloom of a royal line whose progeny have long since faded into obscurity. All others who don the necklace are said to meet with betrayal.",
+    contents: "Nihopalaoa",
+    requirements: "Blood-stained Necklace (x3),Death’s-Head"
+  },
+  {
+    name: "Darksteel Blade",
+    description: "A cruel blade forged for battle, its very shape a violence.",
+    contents: "Stoneblade",
+    requirements: "Orichalcum (x2), Chimera Head (x2), Taurus Gem (x3)"
+  },
+  {
+    name: "Devastating Incendiaries",
+    description: "Incendiary device of destructive force beyond measure. A fell spirit is rumored to dwell deep within.",
+    contents: "Castellanos",
+    requirements: "Bomb Fragment (x3), Frog Oil (x2), Aries Gem (x3)"
+  },
+  {
+    name: "Double-bladed Knife",
+    description: "Dagger with two blades that cross as they taper to a point.",
+    contents: "Zwill Crossblade",
+    requirements: "Windslicer Pinion (x5), Malboro Flower (x7), Wind Crystal (x9)"
+  },
+  {
+    name: "Dragon Crest",
+    description: "A replica of legendary blade said to have slain a fell wyrm that long ago preyed upon the eastern kingdoms. With a sword such as this, one might write new legends!",
+    contents: "Wyrmhero Blade",
+    requirements: "Omega Badge, Godslayer’s Badge, Lu Shang’s Badge"
+  },
+  {
+    name: "Elegant Pole",
+    description: "A walking staff of the sort you might expect a dignitary or high-ranking official to carry. Excellent craftsmanship.",
+    contents: "Ivory Pole",
+    requirements: "Blood-darkened Bone (x8), Demon Feather (x6), Wind Crystal (x7)"
+  },
+  {
+    name: "Emboldening Arms",
+    description: "Used to perform certain sacred rites in the eastern kingdoms. The wearers of these garments are said to experience a great surge of strength.",
+    contents: "Chakra Band,Power Vest",
+    requirements: "Quality Pelt (x6), Tanned Giantskin (x4), Fire Crystal (x3)"
+  },
+  {
+    name: "Engraved Spear",
+    description: "The spear head bears an ancient magicked seal, the words “Consigned to the Flame” etched therein. Only those of utmost proficiency with the spear may wield it.",
+    contents: "Gungnir",
+    requirements: "Ketu Board (x2), Broken Spear (x2), Mystletainn (x2)"
+  },
+  {
+    name: "Esoteric Draught",
+    description: "Divine draught oft appearing in tales of legend, said to mend all wounds great and small. Every adventurer should keep one close to hand.",
+    contents: "Megalixir",
+    requirements: "High Arcana (x2), Onion (x3), Rat Tail (x3)"
+  },
+   {
+    name: "Eye Drop Set",
+    description: "Adventuring is hard on the eyes; treat them right lest your aim suffer the consequences! Containing three (3) doses of eye drops, this set is sure to fit the bill.",
+    contents: "Eye Drops (x3)",
+    requirements: "Demon Eyeball"
+  },
+  {
+    name: "Eye Openers",
+    description: "Trouble waking with one alarm clock? Perhaps a set of five (5) will do the trick? Now with matching tufts of Phoenix Down, at a price that will alarm rival retailers!",
+    contents: "Phoenix Down (x5),Prince’s Kiss (x5)",
+    requirements: "Chocobo Feather (x4)"
+  },
+  {
+    name: "Exquisite Ring",
+    description: "A large opal is set at the center of this bejeweled ring.",
+    contents: "Opal Ring",
+    requirements: "Frogspawn (x2)"
+  },
+  {
+    name: "Feathered Boots",
+    description: "Small wings adorn this pair of boots.",
+    contents: "Winged Boots",
+    requirements: "Arctic Wind"
+  },
+  {
+    name: "Fire-bird’s Whisper",
+    description: "Contains ten (10) tufts of Phoenix Down. A tried and trusted staple, at home in the haversack of any adventurer.",
+    contents: "Phoenix Down (x10)",
+    requirements: "Jack-o’-Lantern"
+  },
+  {
+    name: "First-aid Kit",
+    description: "Hope for the best, plan for the worst. Kit contains potions and tufts of Phoenix Down, at a price no bargain hunter dare pass by.",
+    contents: "Phoenix Down (x2),Potion (x2)",
+    requirements: "Large Feather (x3)"
+  },
+  {
+    name: "Flask of Oily Liquid",
+    description: "Sages are said to have taken draughts of this liquid to replenish lost arcane energies.",
+    contents: "Ether",
+    requirements: "Unpurified Ether (x2),Caramel (x3)"
+  },
+  {
+    name: "Flask of Viscous Liquid",
+    description: "High sages are said to have taken draughts of this liquid to replenish lost arcane energies.",
+    contents: "Hi-Ether",
+    requirements: "Unpurified Ether (x2),Foul Liquid (x2),Slime Oil"
+  },
+  {
+    name: "Forbidding Shield",
+    description: "A shield fearsome to look upon. The mouth at its center is a portal to the unknown, a great maw that opens wide to drink in the Dark.",
+    contents: "Demon Shield",
+    requirements: "Aged Turtle Shell (x2),Destrier Barding (x8),Leamonde Halcyon"
+  },
+  {
+    name: "Forked Spear",
+    description: "An unusual three-pronged spear, much resembling a common fork.",
+    contents: "Trident",
+    requirements: "Pointed Horn (x4),Maggoty Flesh (x5),Wind Magicite (x6)"
+  },
+  {
+    name: "Gigas Gear",
+    description: "Not just for show, these pieces are, as any warrior worth his codpiece will attest, highly prized on the battlefield.",
+    contents: "Gigas Hat,Gigas Chestplate",
+    requirements: "Prime Pelt (x8),Prime Tanned Hide (x7),Dark Crystal (x7)"
+  },
+  {
+    name: "Gilt Phylactery",
+    description: "Made of gold, this amulet imparts a sense of both dignity and wisdom.",
+    contents: "Golden Amulet",
+    requirements: "Tattered Garment"
+  },
+  {
+    name: "Gilt Shield",
+    description: "Shield of wood, trimmed in gold leaf. A splendid choice for those new to the art of swordplay.",
+    contents: "Buckler",
+    requirements: "Molting (x3),Fire Stone (x3)"
+  }, 
+  {
+    name: "Golden Battle Axe",
+    description: "Exquisite battle axe that shines golden in the light. He who would wield it must be well skilled to accord such craftsmanship.",
+    contents: "Golden Axe",
+    requirements: "Electrum (x2),Broken Greataxe (x2),Mardu Halcyon"
+  },
+  {
+    name: "Golden Garb",
+    description: "This three (3) piece set includes an ornate breast plate, shield, and helm, seemingly wrought of pure gold.",
+    contents: "Golden Helm,Golden Armor,Golden Shield",
+    requirements: "Iron Carapace (x3),Tanned Hide (x2),Dark Magicite (x3)"
+  },
+  {
+    name: "Hi-Potion Pack",
+    description: "Contains ten (10) hi-potions. Neither hunter nor adventurer should ever go without!",
+    contents: "Hi-Potion (x10)",
+    requirements: "Rainbow Egg"
+  },
+  {
+    name: "Hollow-shaft Arrows",
+    description: "Contains one (1) Loxley bow, and one (1) quiver of hollow-shaft arrows. The hollows of the arrows are fitted with sacs of poison.",
+    contents: "Bamboo Arrows,Loxley Bow",
+    requirements: "Bat Fang (x5),Yellow Liquid,Water Magicite (x3)"
+  },
+  {
+    name: "Huntman’s Crossbow",
+    description: "Contains one (1) recurve crossbow and one (1) quiver of needle-thin bolts. The light materials used in the weapon’s construction make it a hunter’s favorite.",
+    contents: "Stone Bolts,Recurve Crossbow",
+    requirements: "Bundle of Needles,Festering Flesh (x2),Ice Magicite (x5)"
+  },
+  {
+    name: "Iron-forged Blade",
+    description: "An iron blade of common, even clumsy, design, it is nonetheless well regarded by many a warrior for its uncommon durability.",
+    contents: "Iron Sword",
+    requirements: "Iron Scraps (x3),Foul Flesh (x2),Earth Stone (x3)"
+  },
+  {
+    name: "Jag-tooth Ninja Sword",
+    description: "With a serrated blade, this is a most unusual ninja sword. It is thought that this choice of design may have been made with the intent of further opening any wounds inflicted.",
+    contents: "Kagenui",
+    requirements: "Giant Feather (x5),Festering Flesh (x4),Dark Magicite (x5)"
+  },
+  {
+    name: "Jewel of Creation",
+    description: "An otherworldly light emanates from within this jewel. A profound sense of peace comes over all who look upon it.",
+    contents: "Empyreal Soul",
+    requirements: "High Arcana,Soul Powder,Wargod’s Band (x2)"
+  },
+  {
+    name: "Jewel of the Serpent",
+    description: "The surface of this gem writhes with a serpentine pattern. Within, untold magicks sleep.",
+    contents: "Serpentarius",
+    requirements: "High Arcana,Snake Skin (x4),Serpent Eye (x2)"
+  },
+  {
+    name: "Large Gloves",
+    description: "These large gloves narrow at the wrist, trapping heat inside.",
+    contents: "Blazer Gloves",
+    requirements: "Bent Staff (x3)"
+  },
+  {
+    name: "Late-model Rifle",
+    description: "Late-model, long bore hunting rifle. Wide body, narrow muzzle.",
+    contents: "Arcturus",
+    requirements: "Wyvern Wing (x2),Yensa Fin (x2),Salamand Halcyon"
+  },
+  {
+    name: "The Leering Blade",
+    description: "A demon has been carved into the body of this sword. The frozen leer of its jaw forms a cruel, cutting blade.",
+    contents: "Deathbringer",
+    requirements: "Broken Sword (x3),Demon Tail (x7),Dark Crystal (x10)"
+  },
+  {
+    name: "Life Crystal",
+    description: "A crystal, filled to overflowing with occult magicks. Sublime light radiates from within.",
+    contents: "High Arcana",
+    requirements: "Arcana (x10),Feystone,Soul of Thamasa"
+  },
+  {
+    name: "Light Spear",
+    description: "Spear tipped with a flattened blade. Designed chiefly for civil, rather than martial, purposes, its armor piercing capabilities have been left somewhat wanting.",
+    contents: "Javelin",
+    requirements: "Horn (x2),Foul Flesh (x2),Wind Stone (x3)"
+  },
+  {
+    name: "Magepower Helm",
+    description: "Heavy armor though it be, this helm is strongly magicked. A worthy choice for those knights who rely upon more than just the steel of their blades.",
+    contents: "Magepower Shishak",
+    requirements: "Charger Barding (x5),Chimera Head (x2),Feystone"
+  },
+  {
+    name: "Magick Shard (1)",
+    description: "Engravings of water elementals adorn these shards of magicite. The magicks within are quite strong.",
+    contents: "Water Mote (x4)",
+    requirements: "Festering Flesh (x4)"
+  },
+  {
+    name: "Magick Shard (2)",
+    description: "Shard of magicite engraved with a seraph. Strong magicks pulse from within.",
+    contents: "Holy Mote",
+    requirements: "Glass Jewel (x8),Sky Jewel (x8),Diakon Halcyon"
+  },
+  {
+    name: "Magick Shard (3)",
+    description: "Shard of magicite engraved with a winged serpent. Strong magicks pulse from within.",
+    contents: "Scathe Mote",
+    requirements: "Book of Orgain,Book of Orgain-Cent,Book of Orgain-Mille"
+  },
+  {
+    name: "Marksman’s Delight",
+    description: "Contains one (1) Capella, a marksman’s rifle, and one (1) pouch of a special shot imbued with silencing magicks.",
+    contents: "Silent Shot,Capella",
+    requirements: "Fish Scale (x2),Green Liquid (x2),Dark Stone (x3)"
+  },
+  {
+    name: "Master-crafted Blade",
+    description: "A red zigzag pattern runs the length of the blade, weaving its way across delicate inlay.",
+    contents: "Masamune",
+    requirements: "Gemsteel (x2),Orichalcum (x3),Mallet (x2)"
+  },
+  {
+    name: "Matching Reds",
+    description: "Red cap and matching armor. The color softens and grows richer with wear.",
+    contents: "Red Cap,Brigandine",
+    requirements: "Coeurl Pelt (x3),Quality Hide (x2),Dark Magicite (x3)"
+  },
+  {
+    name: "Matchless Metal",
+    description: "Alloy of unsurpassed hardness. Cannot be worked with ordinary tools.",
+    contents: "Gemsteel",
+    requirements: "Scarletite,Damascus Steel (x2),Hell-Gate’s Flame (x2)"
+  },
+  {
+    name: "Memories of Yore",
+    description: "The world to a child. The weight of the world to an old man.",
+    contents: "Pebble (x99)",
+    requirements: "Quality Stone"
+  },
+  {
+    name: "Monk’s Garb",
+    description: "These pieces are said to wait for one whose heart burns with a worthy flame. They have seen service in battle, and surely smell the part.",
+    contents: "Headband,Jujitsu Gi",
+    requirements: "Coeurl Pelt (x4),Tyrant Hide (x2),Ice Magicite (x4)"
+  },
+  {
+    name: "Morbid Urn",
+    description: "It has been said this urn was made to lock away all living souls. Whether true or not, a preternatural morbidity hands about it like a dark vapor.",
+    contents: "Canopic Jar",
+    requirements: "Horakhty’s Flame,Phobos Glaze,Deimos Clay"
+  },
+  {
+    name: "Mudslinger",
+    description: "Contains one (1) firearm and one (1) pouch of shot, made from hardened mud. The intent, of course, being to cover one’s foes in mud, rendering them blind. And muddy.",
+    contents: "Mud Shot,Mithuna",
+    requirements: "Emperor Scale (x2),Silver Liquid (x3),Earth Crystal (x8)"
+  },
+  {
+    name: "Mysterious Substance",
+    description: "Mysterious substance that feeds on night’s darkness. Beneath its surface lurk foreboding magicks.",
+    contents: "Dark Energy",
+    requirements: "Grimoire Togail (x3),Grimoire Aidhed (x3),Bat Wing"
+  },
+  {
+    name: "Mystic Staff",
+    description: "Rings adorn the tip of this staff. They say that by peering through the rings one may catch a glimpse of a greater truth.",
+    contents: "Cloud Staff",
+    requirements: "Quality Lumber (x4),Demon Feather (x6),Storm Crystal (x7)"
+  },
+  {
+    name: "Nature’s Armory",
+    description: "Clothing and crown made of twig and leaf. Steel’s cold embrace is as nothing before the splendor of nature’s bounty.",
+    contents: "Crown of Laurels,Rubber Suit",
+    requirements: "Prime Pelt (x9),Forbidden Flesh (x7),Fire Crystal (x8)"
+  },
+  {
+    name: "Ninja Footgear",
+    description: "Originally made to quieten the footfalls of those who serve by being seen and not heard, these shoes soon found a place among those who serve by being neither seen nor heard.",
+    contents: "Gillie Boots",
+    requirements: "Slaven Harness (x2)"
+  },
+  {
+    name: "Ninja Garb",
+    description: "Both pieces of this classic ninja outfit are entirely black, loose-fitting, and made of unique material that aids movement.",
+    contents: "Black Cowl,Black Garb",
+    requirements: "Fine Wool (x4),Tanned Tyrant Hide (x2),Fire Magicite (x5)"
+  },
+  {
+    name: "Noisome Incendiaries",
+    description: "Contains one (1) incendiary device and one (1) pouch of poison-spewing bombs. Poison volume regulated by mandate.",
+    contents: "Fumarole,Poison Bombs",
+    requirements: "Bomb Shell,Fire Crystal (x3)"
+  },
+  {
+    name: "Oil-soaked Incendiaries",
+    description: "Contains one (1) incendiary device, the Tumulus, and one (1) pouch of bombs. The bombs contain a fortified blasting glycerin, and are themselves wrapped in a combustible cloth.",
+    contents: "Tumulus,Oil Bombs",
+    requirements: "Bomb Ashes (x3),Book of Orgain (x2),Fire Crystal (x3)"
+  },
+  {
+    name: "Permafrost Bow & Quiver",
+    description: "Contains one (1) quiver of arrows, made of packed permafrost, and one (1) bow of surpassing quality, said to have been carried by a great hero of antiquity.",
+    contents: "Ice Cloud Arrows,Perseus Bow",
+    requirements: "Spiral Incisor (x4),Antarctic Wind (x2),Ice Crystal (x7)"
+  },
+  {
+    name: "Phoenix Flight",
+    description: "Restocked and better than ever! You are not like to find a lower price on tufts of Phoenix Down, perennial favorite of adventures far and wide!",
+    contents: "Phoenix Down (x50)",
+    requirements: "Windslicer Pinion"
+  },
+  {
+    name: "Phials & Philtres",
+    description: "Contains serums and smelling salts, in good quantity, at a price not to be passed by!",
+    contents: "Serum (x8),Nu Khai Sand (x16)",
+    requirements: "Malboro Flower"
+  },
+  {
+    name: "Piercing Bolts",
+    description: "The finest bolts money can buy. Loosed, they resemble the javelins of the heroes of antiquity, hurting straight and true toward their mark.",
+    contents: "Grand Bolts",
+    requirements: "Wrath of the Gods (x2),Ring Wyrm Liver (x2),Capricorn Gem (x3)"
+  },
+  {
+    name: "Platinum Gear",
+    description: "Made using only the finest material, this set of platinum gear gleams handsomely in the light.",
+    contents: "Platinum Helm,Platinum Armor,Platinum Shield",
+    requirements: "Insect Husk (x2),Tanned Giantskin (x5),Storm Magicite (x6)"
+  },
+  {
+    name: "Potion Crate",
+    description: "A must for any potion connoisseur! Contains several of each variety. Consider your restorative needs when deciding which to drink. And please, drink responsibly.",
+    contents: "Potion (x30),Hi-Potion (x20),X-Potion (x10)",
+    requirements: "Screamroot (x3)"
+  },
+  {
+    name: "Potion Pack",
+    description: "Contains two (2) potions. Sure to be used on your travels!",
+    contents: "Potion (x2)",
+    requirements: "Cactus Fruit (x2)"
+  },
+  {
+    name: "Rain of Tears",
+    description: "Contains one (1) Vega, and one (1) pouch of water show, which bear a striking semblance to tears. Every bit as useful against those fiery beasties as you’d hope!",
+    contents: "Aqua Shot,Vega",
+    requirements: "Yensa Scale,Green Liquid (x3),Water Stone (x4)"
+  },
+  {
+    name: "Ranger’s Crossbow",
+    description: "Contains one (1) crossbow and one (1) quiver of bolts, cut long. A favorite weapon of the ranger.",
+    contents: "Long Bolts,Crossbow",
+    requirements: "Crooked Fang (x4),Yellow Liquid (x2),Ice Stone"
+  },
+  {
+    name: "Saint’s Draught",
+    description: "Legendary draught mixed from waters divine, said to mend all wounds great and small. Every adventurer should keep one close to hand.",
+    contents: "Elixir",
+    requirements: "Ambrosia (x3),Demon Drink (x3),High Arcana"
+  },
+  {
+    name: "Samurai’s Katana",
+    description: "Fashioned after a legendary blade made from the tail of a dragon. Called the Great Scythe in the eastern kingdoms, it is said to have reaped entire fields in a single swing.",
+    contents: "Ame-no-Murakumo",
+    requirements: "Iron Ore (x5),Screamroot"
+  },
+  {
+    name: "Serpent Blade",
+    description: "This sword’s blade resembles an ophidian tongue, ornately wrought.",
+    contents: "Orochi",
+    requirements: "Coeurl Whisker (x2),Sickle-Blade (x2),Cancer Gem (x3)"
+  },
+  {
+    name: "Serum Pack",
+    description: "Leaving for foreign climes? Disease can strike any time… Best be prepared. Contains (10) Serumes.",
+    contents: "Serum (x10)",
+    requirements: "Demon’s Sigh"
+  },
+  {
+    name: "Shell-worked Collar",
+    description: "The clasp of this necklace is fashioned from tortoiseshell. For those with discriminating taste.",
+    contents: "Turtleshell Choker",
+    requirements: "Bomb Shell (x2),Four-leaf Clover (x2)"
+  },
+  {
+    name: "Shoes of the Dead",
+    description: "Footgear worn by those preparing for their eternal rest. Redolent of death.",
+    contents: "Quasimodo Boots",
+    requirements: "Zombie Powder,Destrier Mane"
+  },
+  {
+    name: "Silver Bow",
+    description: "Crafted of a beautiful silver metal and adorned with thorns of deep magenta. The handle is affixed with a small shield.",
+    contents: "Sagittarius",
+    requirements: "Beastlord Horn (x3),Moon Ring (x3),Sagittarius Gem (x4)"
+  },
+  {
+    name: "Sipping Wine",
+    description: 'One swallow and you will know why they call them spirits. "Lose yourself in the first sip, find yourself in the second."',
+    contents: "Bacchus’s Wine (x3)",
+    requirements: "Tyrant Hide (x2)"
+  },
+  {
+    name: "Smelling Salts, & C.",
+    description: "Venture on neither hunt nor quest without this set of Hi-Potions and smelling salts in your haversack!",
+    contents: "Hi-Potion (x4),Nu Khai Sand (x2)",
+    requirements: "Malboro Vine (x4)"
+  },
+  {
+    name: "Soul of the Fire-bird",
+    description: "By popular demand, we’ve assembled no fewer than twenty-five (25) tufts of Phoenix Down. Don’t let yourself be caught down for the count!",
+    contents: "Phoenix Down (x25)",
+    requirements: "Bundle of Feathers (x3)"
+  },
+  {
+    name: "Stone Shot",
+    description: "Contains one (1) pouch of stone shot. This shot could easily pass for some sort of petrified egg.",
+    contents: "Stone Shot",
+    requirements: "Mirror Scale (x2),Tyrant Bone (x2),Libra Gem (x3)"
+  },
+  {
+    name: "Sturdy Battle Gear",
+    description: "Armor of the highest quality, crafted by masters of their art, its materials and design carefully selected to provide surpassing resilience.",
+    contents: "Maximillian",
+    requirements: "Charger Barding (x4),Split Armor (x2),Pisces Gem (x3)"
+  },
+  {
+    name: "The Sunflower",
+    description: "A single, beautiful sunflower. Brilliant as the sun, wondrous as creation.",
+    contents: "Tournesol",
+    requirements: "Gemsteel (x3),Empyreal Soul (x3),Serpentarius (x3)"
+  },
+  {
+    name: "Survival Set",
+    description: "It’s difficult to prepare for every eventuality you may encounter in your travels, but this set is a good start. A healthy supply of antidotes, eye drops and echo herbs!",
+    contents: "Antidote (x12),Eye Drops (x12),Echo Herbs (x12)",
+    requirements: "Malboro Fruit (x4)"
+  },
+  {
+    name: "Tail of the Phoenix",
+    description: "Should the unthinkable befall your allies, you’ll want this close to hand. Contains two (2) tufts of Phoenix Down.",
+    contents: "Phoenix Down (x2)",
+    requirements: "Small Feather (x3)"
+  },
+  {
+    name: "Tinctures & Tonics",
+    description: "This set should serve well in a pinch! A generous supply of potions, handkerchiefs and gold needles.",
+    contents: "Potion (x5),Handkerchief (x3),Gold Needle (x3)",
+    requirements: "Succulent Fruit (x4)"
+  },
+  {
+    name: "Traveler’s Garb",
+    description: "Robe and cap ensemble for the traveler on the go. In the linings of each are sewn charms warding against misfortune.",
+    contents: "Feathered Cap,Traveler’s Vestment",
+    requirements: "Braid Wool (x2),Tanned Hide (x2),Water Stone (x5)"
+  },
+  {
+    name: "Triage Kit",
+    description: "Travelers, be prepared! Contains both Hi-Potions and tufts of Phoenix Down, so you can venture out with confidence.",
+    contents: "Phoenix Down (x12),Hi-Potion (x3)",
+    requirements: "Giant Feather (x3)"
+  },
+  {
+    name: "Ultimate Blade",
+    description: "A layered-disc pattern runs the length of this magnificent blade. Its power is legendary, a single blow laying low all but the most resolute adversary.",
+    contents: "Ultima Blade",
+    requirements: "Adamantite (x2),Death Powder (x2),Gnoma Halcyon"
+  },
+  {
+    name: "Unassuming Surcoat",
+    description: "Simple surcoat, stitched from choice pieces of leather.",
+    contents: "Chromed Leathers",
+    requirements: "Wolf Pelt (x2),Earth Stone"
+  },
+  {
+    name: "War Axe",
+    description: "In antiquity this small axe was primarily used as a throwing weapon.",
+    contents: "Francisca",
+    requirements: "Pointed Horn (x2),Malboro Fruit (x4),Wind Magicite (x6)"
+  },
+  {
+    name: "Warped Blade",
+    description: "So strong is the substance of this blade, the warp in its edge could not be mended. Sold as is.",
+    contents: "Diamond Sword",
+    requirements: "Bundle of Feathers (x6),Maggoty Flesh (x4),Fire Magicite (x6)"
+  },
+  {
+    name: "Water-drop Munitions",
+    description: "Palm-sized orbs containing a magicked water.",
+    contents: "Water Bombs",
+    requirements: "Book of Orgain (x3),Putrid Liquid (x3),Water Crystal (x10)"
+  },
+  {
+    name: "Well-forged Blade",
+    description: "Replica of a great sword of legend. It lacks the vivid coloring of the original, but is elsewise its match.",
+    contents: "Simha",
+    requirements: "Lifewick (x3),Emperor Scale (x2),Leshach Halcyon"
+  },
+  {
+    name: "Whisker of the Beast",
+    description: "Spear-like in appearance, this pole takes its name from what many consider the greatest beast to dwell in the deeps.",
+    contents: "Kanya",
+    requirements: "Mythril (x3),Corpse Fly (x3),Aquarius Gem (x4)"
+  },
+  {
+    name: "White Vestments",
+    description: "Protectives preferred by practitioners of the white magick arts.",
+    contents: "White Mask,White Robes",
+    requirements: "Blood Wool (x9),Beastlord Hide (x7),Holy Crystal (x8)"
+  },
+  {
+    name: "Wing Cord",
+    description: "Fashioned in the likeness of a pheasant, this is a tremendously popular item.",
+    contents: "Pheasant Netsuke",
+    requirements: "Stardust (x2)"
+  },
+  {
+    name: "Wind Walkers",
+    description: "Intricate magick glyphs adorn the lining of these boots, conveying arcade powers to their wearer.",
+    contents: "Hermes Sandals",
+    requirements: "Gysahl Greens (x33),Arcana (x15)"
+  },
+  {
+    name: "Wooden Pole",
+    description: "One (1) pole, carved from a fine-grain wood highly prized in the eastern kingdoms. It has been reinforced in places with strips of metal for added strength.",
+    contents: "Cypress Pole",
+    requirements: "Bone Fragment (x5),Succulent Fruit (x3),Earth Stone (x4)"
+  },
+  {
+    name: "X-Potion Pack",
+    description: "Momentous battle on the horizon? Best be sure of your potion supply before charging in. Contains ten (10) X-Potions.",
+    contents: "X-Potion (x10)",
+    requirements: "Behemoth Steak"
+  }
+]);
+
