@@ -63,3 +63,7 @@ File creates an input field where the user can type in the name
 of the item they're looking for. As the user types, a JS function named
 'sendData' is triggered, which sends a POST request to the '/getItem' 
 and retrives the items from the database.
+
+SOURCES: 
+https://www.youtube.com/watch?v=991fdnSllcw&t=352s - AJAX Live Data Search Using Nodejs MongoDB Express
+https://dev.to/webdeasy/top-20-css-buttons-animations-f41 - Imran Pardes
