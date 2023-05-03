@@ -1,3 +1,10 @@
+/*
+file name: server.js
+purpose: starts the server
+authors: Lawrence, Ahmir, Krishna, Chic, Trent, Mya
+version: 5/2/23
+*/
+
 const express = require('express');
 const mongoose = require('mongoose');
 const Item = require('./itemSearch');
