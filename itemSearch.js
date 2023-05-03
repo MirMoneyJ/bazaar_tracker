@@ -5,9 +5,20 @@ const craftableItemSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
-  }
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  contents: {
+    type: String,
+    required: true
+  },
+  requirements: {
+    type: String,
+    required: true
+  },
 }, {collection: 'craftableItems'});
-
 
 // Export the model for use in other files
 module.exports = mongoose.model('CraftableItem', craftableItemSchema);
