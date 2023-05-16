@@ -3,7 +3,9 @@ Live Search for Craftable Items
 This project is a live search feature that retrieves
 items from a MongoDB database based on user input. 
 If a user types a key-stroke, any item that starts with
-that letter will appear on the screen.
+that letter will appear on the screen. This project also
+includes a login/register system to where the user has the
+ability to create an account, change passwords, and login.
 
 Technologies Used
 - MongoDB
@@ -15,8 +17,7 @@ Technologies Used
 
 Prerequisties 
 - Node.js and npm should be installed.
-- npm install mongoose
-- npm install express
+- npm install mongoose, express, jsonwebtoken
 
 Installation Instructions
 
@@ -49,13 +50,17 @@ and creates an Express app that handles JSON and URL-encoded data.
 The root url for the application sends the 'index.html' and 'homePage.html'
 file located in a directory call 'views'
 
-The '/getItem' endpoint handles POST request and retrives items
-from the database. Those retreived items are then returned to
-the client as a JSON payload.
+itemSearch.js & lootItemSearch.js:
 
-itsemSearch.js:
+Files define the schemas for a craftableItem, a lootItem, and exports the models.
 
-File defines the schema for a craftableItem and exports the model.
+login.html:
+
+File allows the user to either long, make an account, or change passwords.
+
+signupPage.html:
+
+File allows the user to create an account. That acocunt is then saved in the Database
 
 index.html:
 
@@ -63,7 +68,3 @@ File creates an input field where the user can type in the name
 of the item they're looking for. As the user types, a JS function named
 'sendData' is triggered, which sends a POST request to the '/getItem' 
 and retrives the items from the database.
-
-SOURCES: 
-https://www.youtube.com/watch?v=991fdnSllcw&t=352s - AJAX Live Data Search Using Nodejs MongoDB Express
-https://dev.to/webdeasy/top-20-css-buttons-animations-f41 - Imran Pardes
