@@ -17,13 +17,14 @@ Technologies Used
 
 Prerequisties 
 - Node.js and npm should be installed.
-- npm install mongoose, express, jsonwebtoken
+- npm install mongoose, express, jsonwebtoken, bcryptjs
 
 Installation Instructions
 
 1. Clone the repository from GitHub https://github.com/MirMoneyJ/bazaar_tracker. 
-2. Do a Mongorestore to get items and inserts from database (mongorestore --nsInclude=myDatabase.* dump/)
-3. Navigate to the project directory and run 
+2. Open up a new terminal and direct to location of the repository file.
+3. Do a Mongorestore to get items and inserts from database (mongorestore --nsInclude=myDatabase.* dump/)
+4. Navigate to the project directory and run 
    'node server.js'
 
 Usage
