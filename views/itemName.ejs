@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craftable Item</title>
+</head>
+<body> 
+    <h1><%= itemName %></h1>
+    <div style="text-align: center;"><br>
+    <p><b>Description:</b> <%= item.description %></p><br>
+    <p><b>Contents:</b> <%= item.contents %></p><br>
+    <p><b>Requirements:</b></p>
+<ul>
+  <% if (item.requirements) { %>
+    <% item.requirements.forEach(function(req) { %>
+      <li class="centered"><%= req.item %> : <%= req.quantity %></li><br> 
+    <% }); %>
+  <% } else { %>
+    <li class="centered">No requirements</li>
+  <% } %>
+</ul>
+    <form action="http://localhost:3000/index">
+    <button type="submit">Return To Search</button>
+    </form>
+  </div>
+</body>
+</html>
